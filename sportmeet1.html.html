@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Register for Sports Meet</title>
+    <style>
+        #registrationForm {
+            display: none;
+            margin-top: 20px;
+        }
+
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function showForm() {
+            document.getElementById("registrationForm").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <h1>千葉モードビジネス専門学校スポーツ大会</h1>
+
+
+    <img src="C:\Users\cmbit\OneDrive\デスクトップ\HTML\chiba..jpg" alt="Chiba Mode Banner" width="500"><br></br>
+
+    <button onclick="showForm()">Register</button>
+
+    <div id="registrationForm">
+        <h2>Registration Form</h2>
+        <!-- For actual submissions, consider using Formspree or Google Forms -->
+        <form action="mailto:udayaserasinghe23@gmail.com" method="post" enctype="text/plain">
+            <label for="name">名前:</label>
+            <input type="text" id="name" name="名前" required>
+
+            <label for="grade">クラス:</label>
+            <input type="text" id="grade" name="クラス" required>
+
+            <label for="event">イベント:</label>
+            <input type="text" id="event" name="イベント" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
